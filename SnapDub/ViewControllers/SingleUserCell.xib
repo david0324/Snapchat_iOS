@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="60" id="igp-4S-NCj" customClass="SingleUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="520" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="igp-4S-NCj" id="N2l-7H-2Ab">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cheng.png" translatesAutoresizingMaskIntoConstraints="NO" id="3A2-Cd-OZF" customClass="PFImageView">
+                        <rect key="frame" x="8" y="13" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ZQ2-L2-CVo"/>
+                            <constraint firstAttribute="width" constant="40" id="l1T-d2-SKv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Xun Cai " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-s1-c3K">
+                        <rect key="frame" x="56" y="24" width="301" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5j8-Lv-mJD"/>
+                            <constraint firstAttribute="width" constant="301" id="Jrd-Bx-peQ"/>
+                            <constraint firstAttribute="height" constant="18" id="xqk-3y-vr8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5j8-Lv-mJD"/>
+                                <exclude reference="Jrd-Bx-peQ"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNS-ao-cCz">
+                        <rect key="frame" x="472" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="3Rk-fO-oEl"/>
+                            <constraint firstAttribute="height" constant="25" id="F7b-AT-8KX"/>
+                            <constraint firstAttribute="height" constant="40" id="MAX-wp-pOV"/>
+                            <constraint firstAttribute="width" constant="25" id="hvV-zO-Q5e"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="Stars">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="F7b-AT-8KX"/>
+                                <exclude reference="hvV-zO-Q5e"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="followClicked:" destination="igp-4S-NCj" eventType="touchUpInside" id="dcs-sg-3RO"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OBn-s1-c3K" firstAttribute="leading" secondItem="3A2-Cd-OZF" secondAttribute="trailing" constant="8" id="22e-O1-f3q"/>
+                    <constraint firstItem="OBn-s1-c3K" firstAttribute="leading" secondItem="3A2-Cd-OZF" secondAttribute="trailing" constant="8" id="67M-yO-tQA"/>
+                    <constraint firstItem="wNS-ao-cCz" firstAttribute="centerY" secondItem="OBn-s1-c3K" secondAttribute="centerY" id="7Dz-Vg-AYk"/>
+                    <constraint firstItem="3A2-Cd-OZF" firstAttribute="leading" secondItem="N2l-7H-2Ab" secondAttribute="leadingMargin" id="7gg-Kg-HXm"/>
+                    <constraint firstItem="OBn-s1-c3K" firstAttribute="centerY" secondItem="3A2-Cd-OZF" secondAttribute="centerY" id="CQC-o9-7YT"/>
+                    <constraint firstItem="OBn-s1-c3K" firstAttribute="top" secondItem="N2l-7H-2Ab" secondAttribute="topMargin" constant="2" id="R31-PW-nr5"/>
+                    <constraint firstAttribute="centerY" secondItem="3A2-Cd-OZF" secondAttribute="centerY" id="S5l-O4-7Oo"/>
+                    <constraint firstItem="wNS-ao-cCz" firstAttribute="trailing" secondItem="N2l-7H-2Ab" secondAttribute="trailingMargin" id="tR8-6t-y6r"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="22e-O1-f3q"/>
+                        <exclude reference="R31-PW-nr5"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="followButton" destination="wNS-ao-cCz" id="SFB-Sv-sHx"/>
+                <outlet property="userImage" destination="3A2-Cd-OZF" id="pXk-tz-wQp"/>
+                <outlet property="userName" destination="OBn-s1-c3K" id="pQB-4y-8gb"/>
+            </connections>
+            <point key="canvasLocation" x="487" y="271"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Stars" width="79" height="76"/>
+        <image name="cheng.png" width="183" height="192"/>
+    </resources>
+</document>

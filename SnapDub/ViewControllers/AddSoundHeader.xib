@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="179" id="bpi-Eg-4NY" customClass="AddSoundHeader">
+            <rect key="frame" x="0.0" y="0.0" width="598" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bpi-Eg-4NY" id="Diy-rj-NcF">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zI-G8-2l6">
+                        <rect key="frame" x="149" y="8" width="300" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="1L8-Y7-w8p"/>
+                            <constraint firstAttribute="height" constant="70" id="Ikl-g1-iIs"/>
+                        </constraints>
+                        <state key="normal" image="AddSoundBoard.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E93-s5-dFq">
+                        <rect key="frame" x="149" y="81" width="300" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="B1f-aT-GkR"/>
+                            <constraint firstAttribute="width" constant="300" id="P7D-hl-Qgj"/>
+                        </constraints>
+                        <state key="normal" image="AddSound.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3zI-G8-2l6" firstAttribute="top" secondItem="Diy-rj-NcF" secondAttribute="topMargin" id="CcV-TG-cex"/>
+                    <constraint firstAttribute="centerX" secondItem="3zI-G8-2l6" secondAttribute="centerX" id="Qvl-Wj-IyO"/>
+                    <constraint firstItem="E93-s5-dFq" firstAttribute="top" secondItem="3zI-G8-2l6" secondAttribute="bottom" constant="3" id="SXJ-zE-6uI"/>
+                    <constraint firstAttribute="centerX" secondItem="E93-s5-dFq" secondAttribute="centerX" id="a5U-a0-7AM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addSound" destination="E93-s5-dFq" id="k9A-WN-ffM"/>
+                <outlet property="addSoundBoard" destination="3zI-G8-2l6" id="nHS-ag-6ch"/>
+            </connections>
+            <point key="canvasLocation" x="1111" y="270"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AddSound.png" width="879" height="216"/>
+        <image name="AddSoundBoard.png" width="876" height="198"/>
+    </resources>
+</document>

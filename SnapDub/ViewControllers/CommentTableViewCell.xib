@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="jekyll.otf">
+            <string>Jekyll-Regular</string>
+            <string>Jekyll-Regular</string>
+            <string>Jekyll-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="65" id="bJa-Ze-hk2" customClass="CommentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="527" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bJa-Ze-hk2" id="Yg1-zz-qzI">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2d ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOZ-T5-dNo">
+                        <rect key="frame" x="45" y="43" width="39" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6WK-2C-20o"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Jekyll-Regular" family="Jekyll" pointSize="12"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6WK-2C-20o"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheng.png" translatesAutoresizingMaskIntoConstraints="NO" id="XI0-TC-ILw" customClass="PFImageLoadingView">
+                        <rect key="frame" x="8" y="14" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="RFf-vZ-5XC"/>
+                            <constraint firstAttribute="height" constant="35" id="erT-3X-A6g"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cheng" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIO-39-xXZ">
+                        <rect key="frame" x="45" y="8" width="46" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="SOn-wQ-CDS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Jekyll-Regular" family="Jekyll" pointSize="14"/>
+                        <color key="textColor" red="0.60392156862745094" green="0.8901960784313725" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="superlongbigwordalskdjlkasdiuhqwebljkbcaibhjsah secondsuperbiglongword wordcannotapeartotoally" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-jS-Ei6">
+                        <rect key="frame" x="45" y="17" width="427" height="39"/>
+                        <fontDescription key="fontDescription" name="Jekyll-Regular" family="Jekyll" pointSize="14"/>
+                        <color key="textColor" red="0.24702099120000001" green="0.24702099120000001" blue="0.24702099120000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dOZ-T5-dNo" firstAttribute="top" secondItem="eEd-jS-Ei6" secondAttribute="bottom" id="0OQ-Mz-Huj"/>
+                    <constraint firstItem="eEd-jS-Ei6" firstAttribute="leading" secondItem="XI0-TC-ILw" secondAttribute="trailing" constant="5" id="4wT-L0-Lug"/>
+                    <constraint firstItem="dOZ-T5-dNo" firstAttribute="leading" secondItem="eEd-jS-Ei6" secondAttribute="leading" id="8uu-ic-7Wu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eEd-jS-Ei6" secondAttribute="bottom" constant="-5" id="Iof-qc-yst"/>
+                    <constraint firstItem="dOZ-T5-dNo" firstAttribute="leading" secondItem="XI0-TC-ILw" secondAttribute="trailing" constant="5" id="Rjc-2Q-iG1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eEd-jS-Ei6" secondAttribute="trailing" constant="-3" id="YFT-M1-XXd"/>
+                    <constraint firstAttribute="centerY" secondItem="XI0-TC-ILw" secondAttribute="centerY" id="aAw-8H-ZRl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dOZ-T5-dNo" secondAttribute="trailing" constant="-1" id="dmD-mR-EyO"/>
+                    <constraint firstItem="eEd-jS-Ei6" firstAttribute="top" secondItem="dOZ-T5-dNo" secondAttribute="bottom" constant="-2" id="kkt-B7-9bN"/>
+                    <constraint firstItem="qIO-39-xXZ" firstAttribute="leading" secondItem="XI0-TC-ILw" secondAttribute="trailing" constant="5" id="lAH-sx-gNy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eEd-jS-Ei6" secondAttribute="bottom" constant="-5" id="mLB-iA-dsn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eEd-jS-Ei6" secondAttribute="trailing" constant="-3" id="n20-Px-Gi9"/>
+                    <constraint firstItem="dOZ-T5-dNo" firstAttribute="top" secondItem="Yg1-zz-qzI" secondAttribute="topMargin" constant="-5" id="q8U-BM-HLg"/>
+                    <constraint firstItem="qIO-39-xXZ" firstAttribute="top" secondItem="Yg1-zz-qzI" secondAttribute="topMargin" constant="-5" id="qsx-wu-gqX"/>
+                    <constraint firstItem="XI0-TC-ILw" firstAttribute="leading" secondItem="Yg1-zz-qzI" secondAttribute="leadingMargin" id="uHy-uo-5oh"/>
+                    <constraint firstItem="eEd-jS-Ei6" firstAttribute="top" secondItem="qIO-39-xXZ" secondAttribute="bottom" id="xoG-gS-PyC"/>
+                    <constraint firstItem="qIO-39-xXZ" firstAttribute="top" secondItem="Yg1-zz-qzI" secondAttribute="topMargin" constant="-5" id="ylC-xC-FwW"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Iof-qc-yst"/>
+                        <exclude reference="kkt-B7-9bN"/>
+                        <exclude reference="mLB-iA-dsn"/>
+                        <exclude reference="Rjc-2Q-iG1"/>
+                        <exclude reference="dmD-mR-EyO"/>
+                        <exclude reference="q8U-BM-HLg"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentField" destination="eEd-jS-Ei6" id="7et-js-7Em"/>
+                <outlet property="dateLabel" destination="dOZ-T5-dNo" id="vkT-pA-rWl"/>
+                <outlet property="imageView" destination="XI0-TC-ILw" id="11F-TZ-c9Q"/>
+                <outlet property="userIcon" destination="XI0-TC-ILw" id="e8c-Bh-4dz"/>
+                <outlet property="userName" destination="qIO-39-xXZ" id="lBe-cu-NAM"/>
+            </connections>
+            <point key="canvasLocation" x="371.5" y="237.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cheng.png" width="183" height="192"/>
+    </resources>
+</document>

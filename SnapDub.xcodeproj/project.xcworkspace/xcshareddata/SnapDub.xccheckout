@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C18E4E9A-FAF0-43AF-AED7-80C57A6DCB23</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SnapDub</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>372a0cf9-621a-43d3-8188-25bc6e52db0c</key>
+		<string>https://subversion.assembla.com/svn/snapdub</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SnapDub-FinalVersion/SnapDub.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>372a0cf9-621a-43d3-8188-25bc6e52db0c</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>372a0cf9-621a-43d3-8188-25bc6e52db0c</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>372a0cf9-621a-43d3-8188-25bc6e52db0c</string>
+			<key>IDESourceControlWCCName</key>
+			<string>snapdub</string>
+		</dict>
+	</array>
+</dict>
+</plist>

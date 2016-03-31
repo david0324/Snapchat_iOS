@@ -1,0 +1,50 @@
+//
+//  AnalyticsManager.h
+//  SnapDub
+//
+//  Created by Infinidy on 2015-07-22.
+//  Copyright (c) 2015 wjs. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_0_PreviewSound @"0_0_PreviewSound"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_0_1_ClickOnSoundCell @"0_1_ClickOnSoundCell"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_1_CameraAccess_info_ok @"1_CameraAccess_info_ok"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_1_1_CameraAccess_given @"1_1_CameraAccess_given"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_1_1_CameraAccess_denied @"1_1_CameraAccess_denied"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_2_Recording_filer_selected @"2_Recording_filer_selected"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_3_Recording_start_pressed @"3_Recording_start_pressed"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_4_Recording_finished @"4_Recording_finished"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_5_VideoPreview_next_tapped @"5_VideoPreview_next_tapped"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_1_Recording_back_tapped @"6_1_Recording_back_tapped"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_cameraRoll @"6_2_Recording_shared_cameraRoll"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_cameraRoll_customAccessMessage_ok @"6_2_Recording_shared_cameraRoll_customAccessMessage_ok"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_cameraRoll_customAccessMessage_given @"6_2_Recording_shared_cameraRoll_customAccessMessage_given"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_cameraRoll_customAccessMessage_denied @"6_2_Recording_shared_cameraRoll_customAccessMessage_denied"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_facebook @"6_2_Recording_shared_facebook"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_facebookMessenger @"6_2_Recording_shared_facebookMessenger"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_twitter @"6_2_Recording_shared_twitter"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_instagram @"6_2_Recording_shared_instagram"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_whatsapp @"6_2_Recording_shared_whatsapp"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_sms @"6_2_Recording_shared_sms"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_6_2_Recording_shared_email @"6_2_Recording_shared_email"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_7_0_sound_editing_popupImage @"7_0_sound_editing_popupImage"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_7_1_sound_permission_popup @"7_1_sound_permission_popup"
+#define ANALYTICS_MANAGER_TUTORIAL_STEP_7_2_sound_permission_granted @"7_2_sound_permission_granted"
+
+#define SELECT_SOUND_TO_RECORD_REMINDER1 @"TSTEP_REM_SELECT_SOUND_TO_RECORD_REMINDER1"
+#define SELECT_SOUND_TO_RECORD_REMINDER2 @"TSTEP_REM_SELECT_SOUND_TO_RECORD_REMINDER2"
+#define SELECT_SOUND_TO_RECORD_REMINDER3 @"TSTEP_REM_SELECT_SOUND_TO_RECORD_REMINDER3"
+#define SHOW_FAV_SOUND_REMINDER @"TSTEP_REM_SHOW_FAV_SOUND_REMINDER"
+
+
+@interface AnalyticsManager : NSObject
+
++(AnalyticsManager*) getAnalyticsManager;
+
+
++(void) logTutorialStep:(NSString*)step;
+
+@end

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="trendCategoryCell" id="gTV-IL-0wX" customClass="TrendCategoryCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Horror\" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOt-jx-ekj">
+                        <rect key="frame" x="8" y="151" width="134" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.1668695909" green="0.72223568400000004" blue="0.49431746780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Ads.png" translatesAutoresizingMaskIntoConstraints="NO" id="8oA-Ei-MQC" customClass="PFImageLoadingView">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                        </accessibility>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8oA-Ei-MQC" secondAttribute="trailing" id="9eK-w1-miA"/>
+                <constraint firstItem="8oA-Ei-MQC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="H7y-d8-eGC"/>
+                <constraint firstAttribute="bottom" secondItem="sOt-jx-ekj" secondAttribute="bottom" constant="8" id="Jwo-KR-pmm"/>
+                <constraint firstItem="sOt-jx-ekj" firstAttribute="top" secondItem="8oA-Ei-MQC" secondAttribute="bottom" constant="11" id="PUk-20-XkZ"/>
+                <constraint firstItem="sOt-jx-ekj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="o86-uU-7aE"/>
+                <constraint firstAttribute="trailing" secondItem="sOt-jx-ekj" secondAttribute="trailing" constant="8" id="qBL-5V-Z4R"/>
+                <constraint firstItem="8oA-Ei-MQC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zWc-s3-Bke"/>
+            </constraints>
+            <size key="customSize" width="143" height="184"/>
+            <connections>
+                <outlet property="iconView" destination="8oA-Ei-MQC" id="CGZ-J8-izK"/>
+                <outlet property="labelView" destination="sOt-jx-ekj" id="pOP-Px-a31"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Ads.png" width="327" height="327"/>
+    </resources>
+</document>

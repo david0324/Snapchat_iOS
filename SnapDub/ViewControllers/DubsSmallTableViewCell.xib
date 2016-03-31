@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dubsSmallCell" rowHeight="48" id="KGk-i7-Jjw" customClass="DubsSmallTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheng.png" translatesAutoresizingMaskIntoConstraints="NO" id="iRt-8P-5Ci">
+                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="OW9-Qs-k08"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did you shrink her gipsy?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6K-Zi-0ic">
+                        <rect key="frame" x="80" y="8" width="360" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.1215686275" green="0.1215686275" blue="0.1205600168" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4o-2c-qru">
+                        <rect key="frame" x="449" y="8" width="48" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="LIu-BX-us4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Views" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHh-iR-rUS">
+                        <rect key="frame" x="442" y="37" width="48" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="02G-Pf-pJl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.1215686275" green="0.1215686275" blue="0.1205600168" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Uploaded by Cheng" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zo-Ef-rrQ">
+                        <rect key="frame" x="80" y="37" width="354" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="354" id="MTl-aX-zNz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.1215686275" green="0.1215686275" blue="0.1205600168" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1zo-Ef-rrQ" firstAttribute="leading" secondItem="t6K-Zi-0ic" secondAttribute="leading" id="1YD-hM-6nC"/>
+                    <constraint firstItem="F4o-2c-qru" firstAttribute="leading" secondItem="t6K-Zi-0ic" secondAttribute="trailing" constant="9" id="5g3-GJ-PPB"/>
+                    <constraint firstItem="1zo-Ef-rrQ" firstAttribute="baseline" secondItem="iHh-iR-rUS" secondAttribute="baseline" id="6B7-Hj-ZtQ"/>
+                    <constraint firstItem="iRt-8P-5Ci" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="A4s-MB-79F"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iRt-8P-5Ci" secondAttribute="bottom" constant="-9" id="CIt-l9-Wbz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iHh-iR-rUS" secondAttribute="trailing" constant="-1" id="Mj4-Jv-Tqj"/>
+                    <constraint firstItem="iHh-iR-rUS" firstAttribute="top" secondItem="F4o-2c-qru" secondAttribute="bottom" constant="8" symbolic="YES" id="N6p-nH-Wjo"/>
+                    <constraint firstItem="F4o-2c-qru" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="R4f-4p-Vhs"/>
+                    <constraint firstItem="1zo-Ef-rrQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="UNJ-Cb-MRQ"/>
+                    <constraint firstItem="iRt-8P-5Ci" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dqy-mb-UXB"/>
+                    <constraint firstItem="iHh-iR-rUS" firstAttribute="leading" secondItem="1zo-Ef-rrQ" secondAttribute="trailing" constant="8" symbolic="YES" id="jbx-hL-mO9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="F4o-2c-qru" secondAttribute="trailing" constant="-1" id="rdp-eP-UVJ"/>
+                    <constraint firstItem="1zo-Ef-rrQ" firstAttribute="leading" secondItem="iRt-8P-5Ci" secondAttribute="trailing" constant="8" symbolic="YES" id="reE-67-diG"/>
+                    <constraint firstItem="t6K-Zi-0ic" firstAttribute="baseline" secondItem="F4o-2c-qru" secondAttribute="baseline" id="sqz-Sf-6jW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="F4o-2c-qru" secondAttribute="trailing" constant="-1" id="x6q-CC-rYR"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="x6q-CC-rYR"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="409" y="252"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cheng.png" width="183" height="192"/>
+    </resources>
+</document>
